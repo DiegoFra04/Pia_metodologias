@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    background-color: aqua;
+    border: 8px solid black;
+
+}
+
+nav ul {
+    background-color: yellow;
+    height: 25px;
+    border: 3px solid black;
+}
+nav ul li {
+    float: right;
+    width: 15%;
+}
+
+.Secciones::after{
+    clear: both;
+    content: "";
+    display: table;
+
+}
+
+.cuadrito{
+    width: 50px;
+    height: 50px;
+    background-color: firebrick;
+    
+}
+
+.galeria{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100px;
+
+}
