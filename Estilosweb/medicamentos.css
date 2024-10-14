@@ -22,3 +22,8 @@ nav ul li {
     display: table;
 
 }
+
+.medicinas{
+    display: flex;
+    justify-content: center;
+}

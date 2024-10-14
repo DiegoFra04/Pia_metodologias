@@ -22,3 +22,8 @@ nav ul li {
     display: table;
 
 }
+
+.vitaminas{
+    display: flex;
+    justify-content: center;
+}
