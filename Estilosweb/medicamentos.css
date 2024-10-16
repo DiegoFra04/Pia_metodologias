@@ -26,4 +26,59 @@ nav ul li {
 .medicinas{
     display: flex;
     justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    padding: 20px;
+
 }
+
+
+
+.Producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.medicamento {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.precio {
+    font-size: 16px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.paracetamol {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.ibuprofeno {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 8px;
+
+}
+
+
+.bromuropin {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 8px;
+
+}
+
+
