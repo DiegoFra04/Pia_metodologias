@@ -33,7 +33,7 @@ nav ul li {
 .left{
     grid-area: l;
     justify-content: left;
-    margin: 2em;
+    margin: 1em;
 }
 
 #f1{
@@ -43,4 +43,10 @@ nav ul li {
     grid-template-rows: auto ;
     grid-template-areas: "l r"
                          "l r";
+}
+
+
+
+ol{
+    font-size: 20px;
 }

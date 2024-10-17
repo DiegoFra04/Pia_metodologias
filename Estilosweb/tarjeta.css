@@ -2,7 +2,6 @@ h1{
     text-align: center;
     background-color: aqua;
     border: 8px solid black;
-
 }
 
 nav ul {
@@ -19,5 +18,4 @@ nav ul li {
     clear: both;
     content: "";
     display: table;
-
 }
