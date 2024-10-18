@@ -1,4 +1,4 @@
-h1{
+.Nombre{
     text-align: center;
     background-color: aqua;
     border: 8px solid black;
@@ -12,7 +12,7 @@ nav ul {
 }
 nav ul li {
     float: right;
-    width: 15%;
+    width: 18%;
 
 }
 
@@ -23,7 +23,13 @@ nav ul li {
 
 }
 
-.Producto {
+.Otros{
+    text-align: center;
+}
+
+
+
+.Producto{
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -36,16 +42,26 @@ nav ul li {
 .vitaminas{
     display: flex;
     justify-content: center;
+    gap: 200px; 
+    flex-wrap: wrap; 
+    padding: 20px;
+
+}
+
+.vitaminas2{
+    display: flex;
+    justify-content: center;
     gap: 20px; 
     flex-wrap: wrap; 
     padding: 20px;
 
 }
 
-.vitamina {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #333;
+.vita {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 8px;
 }
 
 .precio {
@@ -54,23 +70,3 @@ nav ul li {
     font-weight: bold;
 }
 
-.vitOmega {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-.vitFusion {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-.vitSBear{
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    border-radius: 8px;
-}

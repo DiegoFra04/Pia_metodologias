@@ -1,4 +1,4 @@
-h1{
+.Nombre{
     text-align: center;
     background-color: aqua;
     border: 8px solid black;
@@ -12,7 +12,7 @@ nav ul {
 }
 nav ul li {
     float: right ;
-    width: 15%;
+    width: 18%;
     
 }
 
@@ -23,7 +23,20 @@ nav ul li {
 
 }
 
+.Otros{
+    text-align: center;
+}
+
 .medicinas{
+    display: flex;
+    justify-content: center;
+    gap: 200px; 
+    flex-wrap: wrap; 
+    padding: 20px;
+
+}
+
+.medicinas2{
     display: flex;
     justify-content: center;
     gap: 20px; 
@@ -32,7 +45,12 @@ nav ul li {
 
 }
 
-
+.medica {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 8px;
+}
 
 .Producto {
     background-color: #fff;
@@ -45,40 +63,14 @@ nav ul li {
 }
 
 
-.medicamento {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #333;
-}
-
 .precio {
     font-size: 16px;
     color: lightsalmon;
     font-weight: bold;
 }
 
-.paracetamol {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-.ibuprofeno {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    border-radius: 8px;
-
-}
 
 
-.bromuropin {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    border-radius: 8px;
 
-}
 
 

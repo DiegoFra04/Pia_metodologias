@@ -1,4 +1,4 @@
-h1{
+.Nombre{
     text-align: center;
     background-color: aqua;
     border: 8px solid black;
@@ -12,7 +12,7 @@ nav ul {
 }
 nav ul li {
     float: right;
-    width: 15%;
+    width: 18%;
 }
 
 .Secciones::after{
@@ -22,17 +22,50 @@ nav ul li {
 
 }
 
-.cuadrito{
-    width: 50px;
-    height: 50px;
-    background-color: firebrick;
-    
+.Otros{
+    text-align: center;
 }
 
-.galeria{
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100px;
+.dermatologia{
+    display: flex;
+    justify-content: center;
+    gap: 200px; 
+    flex-wrap: wrap; 
+    padding: 20px;
 
 }
+
+.dermatologia2{
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    padding: 20px;
+
+}
+
+.derma {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.Producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 220px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.precio {
+    font-size: 16px;
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+
