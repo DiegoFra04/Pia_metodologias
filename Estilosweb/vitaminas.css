@@ -3,12 +3,12 @@ header {
 }
 
 header h1{
-    background-color: #00ffd5; 
+    background-color: #00a81c; 
     padding: 20px; 
     text-align: center; 
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: rgb(1, 73, 93);
+    color: rgb(121, 238, 62);
     font-size: 36px; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold; 
@@ -34,7 +34,7 @@ nav ul li{
 }
 
 .Secciones {
-    background-color: #4f877b;
+    background-color: #0c9402;
     overflow: hidden;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
@@ -62,8 +62,6 @@ nav ul li{
 .Otros{
     text-align: center;
 }
-
-
 
 .Producto{
     background-color: #fff;
