@@ -106,3 +106,12 @@ nav ul li{
 }
 
 
+.footer {
+    grid-area: footer;
+    background-color: lightskyblue;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}

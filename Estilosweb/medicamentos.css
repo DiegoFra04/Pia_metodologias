@@ -103,7 +103,15 @@ nav ul li{
 }
 
 
-
+.footer {
+    grid-area: footer;
+    background-color: lightcoral;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
 
 
 

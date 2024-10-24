@@ -142,4 +142,12 @@ aside {
 
 footer {
     grid-area: footer;
+    grid-area: footer;
+    background-color: lightgreen;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
 }
+
