@@ -71,7 +71,7 @@ main {
 }
 
 .product-image img {
-    width: 300px;
+    width: 135px;
     height: auto;
     border-radius: 10px;
 }
@@ -179,3 +179,4 @@ aside {
     width: 100%;
     bottom: 0;
 }
+
