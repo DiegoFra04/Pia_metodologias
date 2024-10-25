@@ -178,3 +178,14 @@ aside {
     width: 100%;
     bottom: 0;
 }
+
+.buy-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.small-input {
+    width: 30px;
+    padding: 5px;
+}

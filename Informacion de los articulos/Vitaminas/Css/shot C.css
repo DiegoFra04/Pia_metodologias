@@ -15,7 +15,7 @@ body {
 
 header {
     grid-area: header;
-    background-color: lightsalmon;
+    background-color: limegreen;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -42,7 +42,7 @@ header p {
 }
 
 .back-button:hover {
-    background-color: darkred; /* Color de fondo más oscuro al pasar el ratón */
+    background-color:  darkred; /* Color de fondo más oscuro al pasar el ratón */
 }
 
 /* Estilo principal para el producto */
@@ -71,7 +71,7 @@ main {
 }
 
 .product-image img {
-    width: 300px;
+    width: 210px;
     height: auto;
     border-radius: 10px;
 }
@@ -96,15 +96,15 @@ main {
 }
 
 .product-description h3 {
-    color: darkorange;
+    color: #27ae60;
     font-size: 1.8em;
     margin-top: 15px;
 }
 
 .btn-buy {
     text-decoration: none;
-    background-color: darkorange;
-    color: white;
+    background-color: greenyellow;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -114,7 +114,7 @@ main {
 
 .btn-buy:hover {
     text-decoration: none;
-    background-color: lightsalmon;
+    background-color: lightgreen;
 }
 
 /* Beneficios */
@@ -172,14 +172,13 @@ aside {
 /* Pie de página */
 .footer {
     grid-area: footer;
-    background-color: salmon;
-    color: white;
+    background-color: greenyellow;
+    color: black;
     text-align: center;
     padding: 10px 0;
     width: 100%;
     bottom: 0;
 }
-
 
 .buy-container {
     display: flex;
