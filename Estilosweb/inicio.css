@@ -32,6 +32,21 @@ main {
     grid-area: main;
 }
 
+.EncabezadoInicio{
+    background-color: #4f877b; 
+    padding: 20px; 
+    text-align: center; 
+    border-radius: 20px; 
+    height: fit-content; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-size: 20px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold; 
+    letter-spacing: 1px;
+    margin: 0;
+}
+
 nav ul {
     border-radius: 10px;
     display: flex;
@@ -142,7 +157,6 @@ aside {
 
 footer {
     grid-area: footer;
-    grid-area: footer;
     background-color: lightgreen;
     color: black;
     text-align: center;
@@ -153,5 +167,4 @@ footer {
 
 a{
     text-decoration: none;
-
 }
