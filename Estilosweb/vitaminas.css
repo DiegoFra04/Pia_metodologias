@@ -119,17 +119,16 @@ nav ul li{
 }
 
 .footer {
-    grid-area: footer;
     background-color: greenyellow;
     color: black;
     text-align: center;
     padding: 10px 0;
     width: 100%;
     bottom: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
 a{
     text-decoration: none;
-
 }

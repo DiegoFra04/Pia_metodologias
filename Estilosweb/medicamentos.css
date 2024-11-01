@@ -17,6 +17,28 @@ header h1{
     margin: 0;
 }
 
+.contenedor {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.Encabezado{
+    background-color: salmon; 
+    padding: 20px; 
+    text-align: center;
+    border-radius: 20px;
+    width: 500px;
+    height: fit-content; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-size: 20px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold; 
+    letter-spacing: 1px;
+    margin: 0;
+}
+
 nav ul {
     border-radius: 10px;
     display: flex;
@@ -56,8 +78,11 @@ nav ul li{
     background-color: #04AA6D;
     color: white;
   }
+
 .Otros{
     text-align: center;
+    font-size: 40px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .medicinas{
@@ -125,11 +150,9 @@ nav ul li{
     padding: 10px 0;
     width: 100%;
     bottom: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-
 
 a{
     text-decoration: none;
-
 }
