@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paracetamol</title>
     <link rel="stylesheet" href="Css/paracetamol.css">
-    <link rel="pago" href="tarjeta.html">
+    <link rel="carrito" href="/Pia_metodologias/Carrito.js">
 </head>
 <body>
     <header class="header">
@@ -36,12 +36,12 @@
                 </ul>
                 <h3>Precio: $75.00</h3>
 
-                <div class="buy-container">
-                    <a class="btn-buy" href="pago.html">Comprar Ahora</a>
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1" class="small-input">
-                </div>
-
+                <div class="products">
+                    <div class="product">
+                        <label for="cantidad1">Cantidad:</label>
+                        <input type="number" id="cantidad1" min="1" value="1">
+                        <button onclick="addToCart('Paracetamol', 75, 'cantidad1')">Agregar al carrito</button>
+                    </div>
         </section>
     </main>
     <aside>
@@ -52,5 +52,31 @@
         <p>&copy; 2024 Farmacéutica Honshitsu. Todos los derechos reservados.</p>
     </footer>
 
+    <script>
+        // Función para agregar productos al carrito y guardarlos en localStorage
+        function addToCart(productName, price, quantityId) {
+            const quantity = parseInt(document.getElementById(quantityId).value);
+
+            if (quantity <= 0 || isNaN(quantity)) {
+                alert("Por favor, ingrese una cantidad válida.");
+                return;
+            }
+
+            // Obtener el carrito del localStorage o inicializar uno vacío
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            // Verificar si el producto ya existe en el carrito
+            const existingProduct = cart.find(item => item.name === productName);
+            if (existingProduct) {
+                existingProduct.quantity += quantity;
+            } else {
+                cart.push({ name: productName, price: price, quantity: quantity });
+            }
+
+            // Guardar el carrito actualizado en localStorage
+            localStorage.setItem("cart", JSON.stringify(cart));
+            alert(`${productName} agregado al carrito`);
+        }
+    </script>
 </body>
 </html>
