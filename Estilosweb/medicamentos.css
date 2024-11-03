@@ -91,7 +91,7 @@ nav ul li{
     gap: 200px; 
     flex-wrap: wrap; 
     padding: 20px;
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .medicinas2{
@@ -100,7 +100,7 @@ nav ul li{
     gap: 20px; 
     flex-wrap: wrap; 
     padding: 20px;
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .elegant-image-container {
