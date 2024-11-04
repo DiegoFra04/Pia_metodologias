@@ -49,7 +49,7 @@ nav ul li{
     background-color: crimson;
     overflow: hidden;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+}
 
 .Secciones a {
     float: left;
@@ -59,17 +59,17 @@ nav ul li{
     padding: 14px 20px;
     text-decoration: none;
     font-size: 17px;
-  }
+}
   
 .Secciones a:hover {
     background-color: #ddd;
     color: black;
-  }
+}
   
 .Secciones a.active {
     background-color: #333;
     color: white;
-  }
+}
 
 
 /* Estilo principal para el producto */
@@ -148,21 +148,21 @@ aside {
     display: flex;
     gap: 20px;
     margin-bottom: 30px;
-  }
+}
   
-  .product {
+.product {
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+}
   
-  .product h2 {
+.product h2 {
     font-size: 18px;
-  }
+}
   
-  .product button {
+.product button {
     background-color: darkorange;
     color: white;
     border: none;
@@ -170,8 +170,8 @@ aside {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-  }
+}
   
-  .product button:hover {
+.product button:hover {
     background-color: orange;
-  }
+}
