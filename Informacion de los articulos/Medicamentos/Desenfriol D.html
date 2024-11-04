@@ -10,8 +10,12 @@
     <header class="header">
         <h1>Farmacéutica Honshitsu</h1>
         <p>Medicamentos</p>
-        <nav class="back-nav">
-            <a href="javascript:history.back()" class="back-button">← Volver</a>
+        
+        <nav>
+            <ul class="Secciones">
+                <li><a href="javascript:history.back()" class="back-button">← VOLVER</a></li>
+                <li><a href="../../Carrito.html">CARRITO</a></li>
+            </ul>
         </nav>
         
     </header>
@@ -24,42 +28,65 @@
             <div class="product-description">
                 <h2>Desenfriol D</h2>
                 <p>
-                    
+                    Desenfriol es un medicamento que sirve para aliviar los síntomas causados 
+                    por el resfriado común, la gripe y la rinitis alérgica (alergia estacional).
+                </p>
+                <p>
+                    Específicamente, se prescribe para tratar los siguientes síntomas:
                 </p>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Congestión nasal</li>
+                    <li>Estornudos</li>
+                    <li>Dolor de cabeza</li>
+                    <li>Cuerpo cortado</li>
+                    <li>Escurrimiento nasal</li>
+                    <li>Prurito o comezón (zona de los ojos)</li>
+                    <li>Dolor de garganta.</li>
+                    <li>Fiebre</li>
                 </ul>
                 <h3>Precio: $49.50</h3>
-                <div class="buy-container">
-                    <a class="btn-buy" href="Fin.html">Comprar Ahora</a>
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" id="cantidad" name="cantidad" min="1" value="1" class="small-input">
-                </div>
+                <div class="products">
+                    <div class="product">
+                        <label for="cantidad1">Cantidad:</label>
+                        <input type="number" id="cantidad1" min="1" value="1">
+                        <button onclick="addToCart('Desenfriol D', 49.50, 'cantidad1')">Agregar al carrito</button>
+                    </div>
             </div>
         </section>
     </main>
     <aside>
-        <section class="benefits">
-            <h2>Beneficios de la Desenfriol D</h2>
-            <p>
-
-            </p>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>  
+        <hr>
     </aside>
-      
 
-    <!-- Pie de página -->
     <footer class="footer">
         <p>&copy; 2024 Farmacéutica Honshitsu. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        // Función para agregar productos al carrito y guardarlos en localStorage
+        function addToCart(productName, price, quantityId) {
+            const quantity = parseInt(document.getElementById(quantityId).value);
+
+            if (quantity <= 0 || isNaN(quantity)) {
+                alert("Por favor, ingrese una cantidad válida.");
+                return;
+            }
+
+            // Obtener el carrito del localStorage o inicializar uno vacío
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            // Verificar si el producto ya existe en el carrito
+            const existingProduct = cart.find(item => item.name === productName);
+            if (existingProduct) {
+                existingProduct.quantity += quantity;
+            } else {
+                cart.push({ name: productName, price: price, quantity: quantity });
+            }
+
+            // Guardar el carrito actualizado en localStorage
+            localStorage.setItem("cart", JSON.stringify(cart));
+            alert(`${productName} agregado al carrito`);
+        }
+    </script>
 </body>
 </html>
