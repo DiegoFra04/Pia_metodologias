@@ -12,8 +12,11 @@
         <header class="header">
             <h1>Farmacéutica Honshitsu</h1>
             <p>Vitaminas</p>
-            <nav class="back-nav">
-                <a href="javascript:history.back()" class="back-button">← Volver</a>
+            <nav>
+                <ul class="Secciones">
+                    <li><a href="javascript:history.back()" class="back-button">← VOLVER</a></li>
+                    <li><a href="../../Carrito.html">CARRITO</a></li>
+                </ul>
             </nav>
             
         </header>
@@ -26,42 +29,59 @@
                 <div class="product-description">
                     <h2>Sugar Bear</h2>
                     <p>
-                        
+                        Vitaminas para el pelo en forma de gomitas.
                     </p>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+
+                    <p>
+                        La fórmula de estas gomitas apoya al crecimiento del 
+                        pelo de cualquier tipo, da fuerza así como brillo y además 
+                        lo vuelve más manejable. No tienen gluten, son vegetarianas
+                        y al parecer sus ingredientes ayudan al crecimiento y mantenimiento del pelo.
+                    </p>
+                    
                     <h3>Precio: $95.00</h3>
-                    <div class="buy-container">
-                        <a class="btn-buy" href="Fin.html">Comprar Ahora</a>
-                        <label for="cantidad">Cantidad:</label>
-                        <input type="number" id="cantidad" name="cantidad" min="1" value="1" class="small-input">
-                    </div>
+                    <div class="products">
+                        <div class="product">
+                            <label for="cantidad1">Cantidad:</label>
+                            <input type="number" id="cantidad1" min="1" value="1">
+                            <button onclick="addToCart('SugarBear', 95, 'cantidad1')">Agregar al carrito</button>
+                        </div>
                 </div>
             </section>
         </main>
         <aside>
-            <section class="benefits">
-                <h2>Beneficios de la vitamina Sugar Bear</h2>
-                <p>
-    
-                </p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </section>  
+            <hr>
         </aside>
-          
-    
-        <!-- Pie de página -->
+
         <footer class="footer">
             <p>&copy; 2024 Farmacéutica Honshitsu. Todos los derechos reservados.</p>
         </footer>
+
+        <script>
+            // Función para agregar productos al carrito y guardarlos en localStorage
+            function addToCart(productName, price, quantityId) {
+                const quantity = parseInt(document.getElementById(quantityId).value);
+    
+                if (quantity <= 0 || isNaN(quantity)) {
+                    alert("Por favor, ingrese una cantidad válida.");
+                    return;
+                }
+    
+                // Obtener el carrito del localStorage o inicializar uno vacío
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    
+                // Verificar si el producto ya existe en el carrito
+                const existingProduct = cart.find(item => item.name === productName);
+                if (existingProduct) {
+                    existingProduct.quantity += quantity;
+                } else {
+                    cart.push({ name: productName, price: price, quantity: quantity });
+                }
+    
+                // Guardar el carrito actualizado en localStorage
+                localStorage.setItem("cart", JSON.stringify(cart));
+                alert(`${productName} agregado al carrito`);
+            }
+        </script>
 </body>
 </html>
